@@ -1,0 +1,4 @@
+fastapi[all]
+sse-starlette
+asyncio
+confluent-kafka

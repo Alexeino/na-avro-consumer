@@ -1,0 +1,26 @@
+{
+    "type": "record",
+    "name": "Order",
+    "fields": [
+      {"name": "customer_name", "type": "string"},
+      {
+        "name": "items",
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "Item",
+            "fields": [
+              {"name": "item_name", "type": "string"},
+              {"name": "quantity", "type": "int"},
+              {"name": "price_per_item", "type": "float"}
+            ]
+          }
+        }
+      },
+      {"name": "order_status", "type": "string"},
+      {"name": "order_value", "type": "float"},
+      {"name": "order_id", "type": "string"}
+    ]
+  }
+  
